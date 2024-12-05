@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.iframe-container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;  /* Flexible width, adjusts to screen size */
+    height: 90vh; /* Flexible height, adjusts to screen size */
+    max-width: 1200px;
+    max-height: 800px;
+    gap: 10px;
+}
+
+.game-iframe {
+    flex: 1;  /* Each iframe takes up equal space */
+    width: 100%;
+    border: none;
+}
