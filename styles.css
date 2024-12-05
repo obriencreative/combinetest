@@ -24,7 +24,6 @@ body, html {
 }
 
 iframe {
-    flex: 1;  /* Each iframe takes up equal space */
     width: 100vw;
     height: 100vh;
     border: none;
