@@ -15,11 +15,10 @@ body, html {
 .iframe-container {
     display: flex;
     flex-direction: column;
-    width: 90vw;  /* Flexible width, adjusts to screen size */
-    height: 90vh; /* Flexible height, adjusts to screen size */
-    max-width: 1200px;
-    max-height: 800px;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 25px;
+    width: 100vw;  /* Flexible width, adjusts to screen size */
+    height: 100vh; /* Flexible height, adjusts to screen size */
 }
 
 .game-iframe {
