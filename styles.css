@@ -18,7 +18,7 @@ body, html {
     width: 90vw;  /* Flexible width, adjusts to screen size */
     height: 90vh; /* Flexible height, adjusts to screen size */
     max-width: 1200px;
-    max-height: 800px;
+    max-height: 100%;
     gap: 10px;
 }
 
