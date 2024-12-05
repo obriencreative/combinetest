@@ -17,8 +17,8 @@ body, html {
     justify-content: space-between;
     width: 100vw;  /* Flexible width, adjusts to screen size */
     height: 100vh; /* Flexible height, adjusts to screen size */
-    max-width: 1200px;
-    max-height: 100%;
+    max-width: 1200vw;
+    max-height: 100vh;
     gap: 10px;
     box-sizing: border-box;
 }
