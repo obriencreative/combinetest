@@ -25,14 +25,54 @@
             overflow: hidden;
             display: block;
         }
-    
+        .game-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Style for each game iframe */
+        .game-frame {
+            flex-grow: 1;
+            width: 100%;
+            border: none;
+        }
+
+        /* Optional: Styling to center the iframe inside each container */
+        .game-frame-container {
+            flex-grow: 1;
+            width: 100%;
+            position: relative;
+        }
+
+        /* To make the games responsive */
+        .game-frame-container iframe {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio and cover the space */
+        }
+
     </style>
 </head>
 <body>
+
     <div class="game-container">
-        <iframe src="/Game01_CandyCrush/index.html"></iframe>
-        <iframe src="/Game02_TicTacToe/index.html"></iframe>
-        <iframe src="/Game03_SnakeGame/index.html"></iframe>
+        <!-- Game 1 -->
+        <div class="game-frame-container">
+            <iframe class="game-frame" src="Game01_CandyCrush/indexl.html" title="Game 1"></iframe>
+        </div>
+
+        <!-- Game 2 -->
+        <div class="game-frame-container">
+            <iframe class="game-frame" src="Game02_TicTacToe/index.html" title="Game 2"></iframe>
+        </div>
+
+        <!-- Game 3 -->
+        <div class="game-frame-container">
+            <iframe class="game-frame" src="Game03_SnakeGame/index.html" title="Game 3"></iframe>
+        </div>
     </div>
-</body>
+    </style>
+</head>
 </html>
