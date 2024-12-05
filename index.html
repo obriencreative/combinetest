@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Two Stacked Games</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        .game-container { 
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            width: 100vw
+            height: 100vh
+            box-sizing: border-box;
+
+        }
+
+        .game-container iframe {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    
+    </style>
 </head>
 <body>
-    <div class="iframe-container">
+    <div class="game-container">
         <iframe src="/Game01_CandyCrush/index.html"></iframe>
         <iframe src="/Game02_TicTacToe/index.html"></iframe>
         <iframe src="/Game03_SnakeGame/index.html"></iframe>
