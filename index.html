@@ -3,76 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three Stacked Games</title>
-    <style>
-        .game-container { 
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            gap: 20px;
-            width: 100%;
-            height: 100vh;
-            box-sizing: border-box;
-            overflow: hidden;
-            align-items: center;
-        }
-        .game-container iframe {
-            width: 100%;
-            height: 500px;
-            max-width: 100%;
-            max-height: 100%;
-            border: none;
-            overflow: hidden;
-            display: block;
-        }
-        .game-container {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            width: 100%;
-        }
-
-        /* Style for each game iframe */
-        .game-frame {
-            flex-grow: 1;
-            width: 100%;
-            border: none;
-        }
-
-        /* Optional: Styling to center the iframe inside each container */
-        .game-frame-container {
-            flex-grow: 1;
-            width: 100%;
-            position: relative;
-        }
-
-        /* To make the games responsive */
-        .game-frame-container iframe {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Maintain aspect ratio and cover the space */
-        }
-
-    </style>
+    <title>Two Stacked Games</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="game-container">
-        <!-- Game 1 -->
-        <div class="game-frame-container">
-            <iframe class="game-frame" src="Game01_CandyCrush/indexl.html"></iframe>
-        </div>
-
-        <!-- Game 2 -->
-        <div class="game-frame-container">
-            <iframe class="game-frame" src="Game02_TicTacToe/index.html"></iframe>
-        </div>
-
-        <!-- Game 3 -->
-        <div class="game-frame-container">
-            <iframe class="game-frame" src="Game03_SnakeGame/index.html"></iframe>
-        </div>
-    </style>
+    <div class="iframe-container">
+        <iframe class="game-iframe" src="/Game01_CandyCrush/index.html"></iframe>
+        <iframe class="game-iframe" src="/Game02_TicTacToe/index.html"></iframe>
+        <iframe class"game-iframe" src="/Game03_SnakeGame/index.html"></iframe>
+    </div>
 </body>
-</head>
 </html>
+
